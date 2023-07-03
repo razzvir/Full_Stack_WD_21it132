@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="task()">min and max</button>
+    <p id="task1"></p>
+    
+    <script>
+        const a=[1000,2000,5000];
+       function task(){
+            document.getElementById("task1").innerHTML = Math.max(...a)+'<br>';
+            document.getElementById("task1").innerHTML += Math.min(...a);
+        }
+        
+        
+    </script>
+</body>
+</html>
